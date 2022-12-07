@@ -9,6 +9,7 @@ public class MainObject : MonoBehaviour
 {
     // Backtrace client instance
     private BacktraceClient _backtraceClient;
+
     void Start()
     {
         Debug.Log("BTCLD: Starting main object");
@@ -16,10 +17,20 @@ public class MainObject : MonoBehaviour
         var serverUrl = "https://submit.backtrace.io/konst-ryab/04aecb6b3da05e8d83f2a27f9b5f41352ac792428c5e5f6a94ff58d43ee14e46/json";
         var gameObjectName = "Backtrace";
         var databasePath = "${Application.persistentDataPath}/sample/backtrace/path";
+        Debug.Log("BTCLD: DB path: " + databasePath);
+        databasePath = ".";
+
+        bool isReq = BacktraceClient.IsSafeModeRequired();
+        Debug.Log("BTCLD: BacktraceClient IsSafeModeRequired: " + (isReq ? "TRUE" : "FALSE"));
+
+        int count = BacktraceClient.ConsecutiveCrashesCount();
+        Debug.Log("BTCLD: BacktraceClient ConsecutiveCrashesCount: " + count);
+
         var attributes = new Dictionary<string, string>() { { "my-super-cool-attribute-name", "attribute-value" } };
 
         // use game object to initialize Backtrace integration
         _backtraceClient = GameObject.Find(gameObjectName).GetComponent<BacktraceClient>();
+
         //Read from manager BacktraceClient instance
         var database = GameObject.Find(gameObjectName).GetComponent<BacktraceDatabase>();
 

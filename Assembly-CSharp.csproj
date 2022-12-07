@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2986B1C0-0C9D-3319-3B7A-FA690C6F8EAB}</ProjectGuid>
+    <ProjectGuid>{C0C172C9-1410-4F14-1A28-B6797F160885}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -764,11 +764,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Backtrace.Unity.Editor.csproj">
-      <Project>{22AA74E0-FE03-8E66-08FC-415B81A18520}</Project>
+      <Project>{390661F0-2630-FD85-FC5E-EDADC3FC642E}</Project>
       <Name>Backtrace.Unity.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Backtrace.Unity.csproj">
-      <Project>{291451FC-FD72-5EDF-E751-C3C64E9CB236}</Project>
+      <Project>{A7E50BEF-7486-36BA-1D24-EC96C42AEE0F}</Project>
       <Name>Backtrace.Unity</Name>
     </ProjectReference>
   </ItemGroup>

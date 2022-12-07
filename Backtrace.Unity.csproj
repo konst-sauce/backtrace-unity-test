@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{291451FC-FD72-5EDF-E751-C3C64E9CB236}</ProjectGuid>
+    <ProjectGuid>{A7E50BEF-7486-36BA-1D24-EC96C42AEE0F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Backtrace.Unity</AssemblyName>
